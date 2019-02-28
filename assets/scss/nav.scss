@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+    z-index:100;
+  }
+  .link {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .settings-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .settings-icon__line {
+    stroke: var(--color-text);
+    stroke-width: 5px;
+    transition: all 0.2s ease 0.05s;
+  }
+  .settings-icon__rect {
+    stroke: var(--color-text);
+    fill: var(--color-background);
+    stroke-width: 5px;
+    transition: all 0.2s ease 0.05s;
+  }
+
+  .link:hover .settings-icon__line,
+  .link:hover .settings-icon__rect {
+    stroke: var(--color-link);
+    transition: all 0.2s ease 0.05s;
+  }
+  .link:hover .settings-icon__group--1 .settings-icon__rect {
+    transform: translateY(20px);
+  }
+  .link:hover .settings-icon__group--2 .settings-icon__rect {
+    transform: translateY(-20px);
+  }
+  .link:hover .settings-icon__group--3 .settings-icon__rect {
+    transform: translateY(25px);
+  } 

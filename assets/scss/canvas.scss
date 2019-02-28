@@ -1,0 +1,43 @@
+main.page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   cursor: none;
+
+   a,a:hover{
+       cursor:none;
+   }
+}
+
+.page__inner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.cursor{
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.cursor--small{
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 99;
+    background: #fff;
+}
+
+.cursor--canvas{
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+}

@@ -1,26 +1,43 @@
 <html>
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
-    <script arc="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <title>Hello</title>
 </head>
 <body>
-  <div id="container">
-    <div class="blob-wrapper">
-        <svg id="blob" viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
-        <clipPath id="clipShape1">
-            <path d="M715.1,389.3C715.1,563.1,573.8,702.8,400,702.8S88.9,597.2,88.9,423.4S230.2,137.7,404,137.7S715.1,215.5,715.1,389.3Z" />
-        </clipPath>
+    <main class="page">
+            <nav class="nav">
+                    <a href="#" class="link">
+                     <svg class="settings-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                      <g class="settings-icon__group settings-icon__group--1">
+                        <line class="settings-icon__line" x1="79.69" y1="16.2" x2="79.69" y2="83.8"/>
+                        <rect class="settings-icon__rect" x="73.59" y="31.88" width="12.19" height="12.19"/>
+                       </g>
+                      <g class="settings-icon__group settings-icon__group--2">
+                        <line class="settings-icon__line" x1="50.41" y1="16.2" x2="50.41" y2="83.8"/>
+                        <rect class="settings-icon__rect" x="44.31" y="54.33" width="12.19" height="12.19"/>
+                      </g>
+                      <g class="settings-icon__group settings-icon__group--3">
+                        <line class="settings-icon__line" x1="20.31" y1="16.2" x2="20.31" y2="83.8"/>
+                        <rect class="settings-icon__rect" x="14.22" y="26.97" width="12.19" height="12.19"/>
+                      </g>
+                     </svg>
+                    </a>
+                    <!-- you can add more links here -->
+                   </nav>
+        <div class="page__inner" >
+            
 
-        <g clip-path="url(#clipShape1)">
-            <image class="item__img" xlink:href="./assets/img/spacetest2.svg" x="0" y="0" height="800px" width="800px" />
-        </g>
-        </svg>
-      </div>
-  </div>
-  <!-- <canvas></canvas> -->
+                <div class="cursor cursor--small"></div>
+                <canvas class="cursor--canvas cursor--canvas" resize></canvas>
+
+                
+        </div>
+
+       
+    </main>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 
 <script src="./index.js"></script>
 

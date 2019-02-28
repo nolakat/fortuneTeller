@@ -1,11 +1,15 @@
 html,body{
-    background: $new_black;
+    background: var(--color-background);
     height: 100%;
     width: 100%;
     margin: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    --color-background: #A18A97;
+    --color-text: #2D3633;
+    --color-link: #FFF;
 }
 
 canvas{
@@ -20,13 +24,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 div#container{
-    border: 1px solid $lavender;
+    border: 1px solid #2D3633;
     width: 800px;
     min-height: 450px;
     color: $lavender;
     position: absolute;
-}
-
-#blob{
-    cursor: pointer;
 }

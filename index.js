@@ -1,5 +1,4 @@
 import './styles.scss'
-import './assets/js/blob.js'
-// import './assets/js/circle.js'
+import './assets/js/greensock.js'
+import './assets/js/cursor.js'
 
-console.log('hello world');
